@@ -1,0 +1,233 @@
+@import url("fonts.css");
+
+#wrapper{
+	width: 720px;
+	height: 1280px;
+	position: relative;
+	margin: auto;
+	padding: 0;
+	overflow: hidden;
+	
+}
+
+p{
+	font-family: 'trebuchet ms';
+	font-size: 17px;
+	color: darkblue;
+	margin: 33px;
+}
+sup{
+	font-size: 13px;
+}
+.bulletFormat{
+	list-style: disc;
+	color: darkblue;
+	font-size: 17;
+/*	display: inline-block;*/
+}
+
+.main_title{
+	font-family: 'anton';
+	font-size: 40px;
+	text-align: center;
+	color: white;
+}
+.headTitles{
+	font-family: 'congresssansnormal';
+	font-size: 30px;
+	text-align: center;
+	color: darkblue;
+	font-weight: bold;
+}
+
+.bodyText{
+	font-family: "trebuchet ms";
+	font-size: 19px;
+	color: darkblue;
+	margin:0 45px 45px 45px;
+}
+
+.logo{
+	position: relative;
+	width: 250px;
+	margin-left: 30%;
+	animation-name: wobble;
+	animation-duration: 2s;
+	cursor: pointer;
+	background-color: transparent;
+}
+.page0{
+	position: absolute;
+	margin: auto;
+	width: 720px;
+	height: 1280px;
+	top: 0px;
+	left: 0px;
+	z-index: 99999;
+	overflow: hidden;
+	background-color: transparent;
+}
+.page1{
+	position: absolute;
+	margin: auto;
+	width: 720px;
+	height: 1280px;
+	top: 0px;
+	left: 1300px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	z-index: 999991;
+}
+.backToPage0{
+	position: relative;
+	width: 100%;
+	height: 46px;
+	left: 0px;
+	top:0px;
+	cursor: pointer;
+	font-size: 23px;
+	color: darkblue;
+}
+
+.stripetxt{
+	position: relative;
+	font-family:  "impact";
+	font-size: 30px;
+	color: #0000CC;
+	text-align: center;
+	animation-name: pulse;
+	animation-duration: 2s;
+	background-color: transparent;
+	z-index: 992;
+	width: 100%;
+	height: 100px;
+	cursor: pointer;
+}
+
+.full_progBtn{
+	width: 160px;
+	height: 70px;
+	left: 50px;
+	cursor: pointer;
+	background: url(../images/full_programs.png) center no-repeat;
+	background-size: 100% 100%;
+	outline: none;
+	border-style: none;
+	background-color: transparent;
+	z-index: 999991;
+}
+.full_progBtn:hover{
+	transform: scale(.9);
+	transition-duration: 2s;
+	-webkit-transition-duration: 2s;
+	-moz-transition-duration: 2s;
+}
+.full_agendaBtn{
+	position: absolute;
+	width: 160px;
+	height: 70px;
+	left: 240px;
+	cursor: pointer;
+	background: url(../images/full_agenda.png) center no-repeat;
+	background-size: 100% 100%;
+	outline: none;
+	border-style: none;
+	background-color: transparent;
+	z-index: 999991;
+}
+.full_agendaBtn:hover{
+	transform: scale(.9);
+	transition-duration: 2s;
+	-webkit-transition-duration: 2s;
+	-moz-transition-duration: 2s;
+}
+
+.summary_agendaBtn{
+	position: absolute;
+	width: 160px;
+	height: 70px;
+	left: 400px;
+	cursor: pointer;
+	background: url(../images/summary_agenda.png) center no-repeat;
+	background-size: 100% 100%;
+	outline: none;
+	border-style: none;
+	background-color: transparent;
+	z-index: 999991;
+}
+.summary_agendaBtn:hover{
+	transform: scale(.9);
+	transition-duration: 2s;
+	-webkit-transition-duration: 2s;
+	-moz-transition-duration: 2s;
+}
+.priority_agendaBtn{
+	position: absolute;
+	width: 160px;
+	height: 70px;
+	left: 560px;
+	cursor: pointer;
+	background: url(../images/priority_plan.png) center no-repeat;
+	background-size: 100% 100%;
+	outline: none;
+	border-style: none;
+	background-color: transparent;
+	z-index: 999991;
+}
+.priority_agendaBtn:hover{
+	transform: scale(.9);
+	transition-duration: 2s;
+	-webkit-transition-duration: 2s;
+	-moz-transition-duration: 2s;
+}
+
+section{
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 720px;
+	height: 1280;
+	margin: auto;
+	padding: 0;
+}
+
+.full_agenda_container{
+	position: absolute;
+	left: 1200px;
+	top: 0px;
+	width: 720px;
+	height: 960px;
+	overflow: auto;
+	z-index: 999999;
+	background-color: #c9d9d9;
+	display: none;
+	-webkit-overflow-scrolling: touch;
+}
+.SecSummaryAgenda{
+	position: absolute;
+	left: 1200px;
+	top: 0px;
+	width: 720px;
+	height: 960px;
+	overflow: auto;
+	z-index: 999999;
+	background-color: #c9d9d9;
+	display: none;
+	-webkit-overflow-scrolling: touch;
+}
+.SecPriorityAgenda{
+	position: absolute;
+	left: 1200px;
+	top: 0px;
+	width: 720px;
+	height: 960px;
+	overflow: auto;
+	z-index: 999999;
+	background-color: #c9d9d9;
+	display: none;
+	-webkit-overflow-scrolling: touch;
+}
+
+.touch {
+  -webkit-overflow-scrolling: touch;
+}

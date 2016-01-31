@@ -1,0 +1,24 @@
+@font-face {
+	font-family: 'CongressSansItalic';
+	src: url('../fonts/CongressSansItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'CongressSansLight';
+	src: url('../fonts/CongressSansLight.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'CongressSansNormal';
+	src: url('../fonts/CongressSansNormal.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'GEJaridaHeavy';
+	src: url('../fonts/GE Jarida Heavy.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'anton';
+	src: url('../fonts/Antonio-Bold.ttf') format('truetype');
+}
