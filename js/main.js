@@ -44,9 +44,10 @@ $(full_agendaBtn).on(interactionDown,function(){
 $(full_agendaBtn).on(interactionUp,function(){
 	$(full_agendaBtn).css({"transform":"scale(1)","-webkit-transition-duration":"1s"});
 	fullAgenda();
-//	$(SecFullAgenda).show(100).animate({left:0},600);
-//	var pdf = PDFReader.open('/pdf/FullAgenda.pdf', options, success, error);
-//	$(SecFullAgenda).html(pdf);
+});
+$('#backAgenda1').on(interactionUp,function(){
+	$(full_agendaBtn).css({"transform":"scale(1)","-webkit-transition-duration":"1s"});
+	fullAgenda();
 });
 
 $(summary_agendaBtn).on(interactionDown,function(){
@@ -57,12 +58,20 @@ $(summary_agendaBtn).on(interactionUp,function(){
 	$(summary_agendaBtn).css({"transform":"scale(1)","-webkit-transition-duration":"1s"});
 	 SecSummaryAgendaF();
 });
+$('#backAgenda2').on(interactionUp,function(){
+	$(summary_agendaBtn).css({"transform":"scale(1)","-webkit-transition-duration":"1s"});
+	 SecSummaryAgendaF();
+});
 
 $(priority_agendaBtn).on(interactionDown,function(){
 	$(priority_agendaBtn).css({"transform":"scale(.7)","-webkit-transition-duration":"1s"});
 });
 
 $(priority_agendaBtn).on(interactionUp,function(){
+	$(priority_agendaBtn).css({"transform":"scale(1)","-webkit-transition-duration":"1s"});
+	SecPriorityAgendaF();
+});
+$('#backAgenda3').on(interactionUp,function(){
 	$(priority_agendaBtn).css({"transform":"scale(1)","-webkit-transition-duration":"1s"});
 	SecPriorityAgendaF();
 });
@@ -110,4 +119,8 @@ function SecPriorityAgendaF(){
 	}
 }
 
-
+$(document).ready(function(){
+	setTimeout(function(){
+		$('.gestures').hide(500);
+	},4000)
+});
